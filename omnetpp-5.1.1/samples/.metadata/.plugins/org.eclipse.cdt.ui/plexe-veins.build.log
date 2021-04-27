@@ -1,0 +1,15 @@
+15:54:55 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins.so
+/usr/bin/ld: cannot find -lveins_catch
+/usr/bin/ld: cannot find -lveins_inet
+collect2: error: ld returned 1 exit status
+Makefile:244: recipe for target '../out/gcc-debug/src/libveins.so' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+Makefile:12: recipe for target 'all' failed
+make[1]: *** [../out/gcc-debug/src/libveins.so] Error 1
+make: *** [all] Error 2
+
+15:54:56 Build Finished (took 744ms)
+

@@ -1,0 +1,14 @@
+15:54:54 **** Incremental Build of configuration debug for project veins_catch ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/subprojects/veins_catch/src'
+LocalPlatoonPositionHelperTest.cc
+LocalPlatoonPositionHelperTest.cc:3:87: fatal error: veins/modules/application/platooning/utilities/LocalPlatoonPositionHelper.h: No such file or directory
+compilation terminated.
+make[1]: *** [../out/gcc-debug/src/LocalPlatoonPositionHelperTest.o] Error 1
+make: *** [all] Error 2
+Makefile:101: recipe for target '../out/gcc-debug/src/LocalPlatoonPositionHelperTest.o' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/subprojects/veins_catch/src'
+Makefile:5: recipe for target 'all' failed
+
+15:54:54 Build Finished (took 340ms)
+

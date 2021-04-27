@@ -1,0 +1,673 @@
+15:53:14 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:01:02 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:02:38 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:12:59 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:15:35 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:38:45 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:47:04 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:50:21 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:55:45 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:56:13 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:58:08 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:58:50 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+17:02:31 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+03:46:50 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:218:85: error: no matching function for call to ‘Veins::TraCICommandInterface::Vehicle::setLeaderVehicleData(double&)’
+         if (msg == startAccelerationMsg) traciVehicle->setLeaderVehicleData(topSpeed);
+                                                                                     ^
+In file included from ./veins/modules/mobility/traci/TraCIMobility.h:34:0,
+                 from ./veins/modules/application/platooning/scenarios/BaseScenario.h:23,
+                 from ./veins/modules/application/platooning/scenarios/NewTestScenario.h:21,
+                 from veins/modules/application/platooning/scenarios/NewTestScenario.cc:138:
+./veins/modules/mobility/traci/TraCICommandInterface.h:125:14: note: candidate: void Veins::TraCICommandInterface::Vehicle::setLeaderVehicleData(double, double, double, double, double, double)
+         void setLeaderVehicleData(double controllerAcceleration, double acceleration, double speed, double positionX, double positionY, double time);
+              ^
+./veins/modules/mobility/traci/TraCICommandInterface.h:125:14: note:   candidate expects 6 arguments, 1 provided
+Makefile:249: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+03:54:31 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:218:77: error: ‘pb’ was not declared in this scope
+         if (msg == startAccelerationMsg) traciVehicle->setLeaderVehicleData(pb->getControllerAcceleration(), pb->getAcceleration(), pb->getSpeed(), pb->getPositionX(), pb->getPositionY(), pb->getTime());
+                                                                             ^
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+04:06:15 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:13: error: expected ‘;’ before ‘traciVehicle’
+             traciVehicle->setLeaderVehicleData(data.controllerAcceleration, pb->getAcceleration(), pb->getSpeed(), pb->getPositionX(), pb->getPositionY(), pb->getTime());
+             ^
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+04:06:37 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:53: error: ‘struct Plexe::VEHICLE_DATA’ has no member named ‘controllerAcceleration’
+             traciVehicle->setLeaderVehicleData(data.controllerAcceleration, pb->getAcceleration(), pb->getSpeed(), pb->getPositionX(), pb->getPositionY(), pb->getTime());
+                                                     ^
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:77: error: ‘pb’ was not declared in this scope
+             traciVehicle->setLeaderVehicleData(data.controllerAcceleration, pb->getAcceleration(), pb->getSpeed(), pb->getPositionX(), pb->getPositionY(), pb->getTime());
+                                                                             ^
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+Makefile:12: recipe for target 'all' failed
+make: *** [all] Error 2
+04:08:13 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:53: error: ‘struct Plexe::VEHICLE_DATA’ has no member named ‘controllerAcceleration’
+             traciVehicle->setLeaderVehicleData(data.controllerAcceleration, data.acceleration, topSpeed, data.positionX, data.positionY, data.time;
+                                                     ^
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:147: error: expected ‘)’ before ‘;’ token
+             traciVehicle->setLeaderVehicleData(data.controllerAcceleration, data.acceleration, topSpeed, data.positionX, data.positionY, data.time;
+                                                                                                                                                   ^
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+04:08:34 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:53: error: ‘struct Plexe::VEHICLE_DATA’ has no member named ‘controllerAcceleration’
+             traciVehicle->setLeaderVehicleData(data.controllerAcceleration, data.acceleration, topSpeed, data.positionX, data.positionY, data.time);
+                                                     ^
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+04:10:11 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:19:01 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:22:14 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc: In member function ‘virtual void NewTestScenario::handleSelfMsg(omnetpp::cMessage*)’:
+veins/modules/application/platooning/scenarios/NewTestScenario.cc:221:68: error: ‘pass’ was not declared in this scope
+             traciVehicle->setLeaderVehicleData(1.5, 1.5, topSpeed, pass, pass, pass);
+                                                                    ^
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o] Error 1
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/scenarios/NewTestScenario.o' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+04:39:57 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:29:55 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+veins/modules/application/platooning/apps/BaseApp.cc: In member function ‘virtual void BaseApp::initialize(int)’:
+veins/modules/application/platooning/apps/BaseApp.cc:56:9: error: ‘distanceErrorPloegOut’ was not declared in this scope
+         distanceErrorPloegOut.setName("distanceErrorPloeg");
+         ^
+veins/modules/application/platooning/apps/BaseApp.cc: In member function ‘virtual void BaseApp::logVehicleData(bool)’:
+veins/modules/application/platooning/apps/BaseApp.cc:132:5: error: ‘distanceErrorPloegOut’ was not declared in this scope
+     distanceErrorPloegOut.record(distanceErrorPloeg);
+     ^
+make[1]: *** [../out/gcc-debug/src/veins/modules/application/platooning/apps/BaseApp.o] Error 1
+Makefile:248: recipe for target '../out/gcc-debug/src/veins/modules/application/platooning/apps/BaseApp.o' failed
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+make: *** [all] Error 2
+Makefile:12: recipe for target 'all' failed
+04:33:42 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+veins/modules/application/platooning/apps/GeneralPlatooningApp.cc
+veins/modules/application/platooning/apps/SimplePlatooningApp.cc
+veins/modules/application/platooning/maneuver/JoinAtBack.cc
+veins/modules/application/platooning/maneuver/JoinAtBack.cc: In member function ‘virtual void JoinAtBack::handleJoinFormationAck(const JoinFormationAck*)’:
+veins/modules/application/platooning/maneuver/JoinAtBack.cc:248:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (unsigned int i = 1; i < positionHelper->getPlatoonSize(); i++) {
+                                ^
+veins/modules/application/platooning/maneuver/JoinManeuver.cc
+veins/modules/application/platooning/maneuver/Maneuver.cc
+veins/modules/application/platooning/scenarios/AccelerateAndBrakeScenario.cc
+veins/modules/application/platooning/scenarios/AutoLaneChangeScenario.cc
+veins/modules/application/platooning/scenarios/BrakingScenario.cc
+veins/modules/application/platooning/scenarios/JoinManeuverScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/SimpleScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:38:33 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+veins/modules/application/platooning/apps/GeneralPlatooningApp.cc
+veins/modules/application/platooning/apps/SimplePlatooningApp.cc
+veins/modules/application/platooning/maneuver/JoinAtBack.cc
+veins/modules/application/platooning/maneuver/JoinAtBack.cc: In member function ‘virtual void JoinAtBack::handleJoinFormationAck(const JoinFormationAck*)’:
+veins/modules/application/platooning/maneuver/JoinAtBack.cc:248:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (unsigned int i = 1; i < positionHelper->getPlatoonSize(); i++) {
+                                ^
+veins/modules/application/platooning/maneuver/JoinManeuver.cc
+veins/modules/application/platooning/maneuver/Maneuver.cc
+veins/modules/application/platooning/scenarios/AccelerateAndBrakeScenario.cc
+veins/modules/application/platooning/scenarios/AutoLaneChangeScenario.cc
+veins/modules/application/platooning/scenarios/BrakingScenario.cc
+veins/modules/application/platooning/scenarios/JoinManeuverScenario.cc
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+veins/modules/application/platooning/scenarios/SimpleScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:56:40 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:59:02 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+05:01:19 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+05:16:50 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+veins/modules/application/platooning/apps/BaseApp.cc: In member function ‘virtual void BaseApp::logVehicleData(bool)’:
+veins/modules/application/platooning/apps/BaseApp.cc:132:12: warning: unused variable ‘distanceErrorPloeg’ [-Wunused-variable]
+     double distanceErrorPloeg = distance - desiredDistancePloeg;
+            ^
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+05:26:28 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+05:44:18 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+04:41:45 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:02:45 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:14:55 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:15:03 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:16:05 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:23:15 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:23:54 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:26:39 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:29:40 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:35:17 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:46:10 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:46:26 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:48:36 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:48:40 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:50:23 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:03:04 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:03:43 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:14:22 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:18:15 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:16:04 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:20:34 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:20:41 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:22:35 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:24:43 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:24:58 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:25:13 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:25:23 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+19:27:29 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:23:59 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:29:11 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:50:37 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:52:50 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:52:54 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:55:10 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:58:34 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:13:21 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:14:35 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:16:49 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:44:17 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:54:47 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:56:53 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:58:32 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:27:45 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:29:55 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:40:07 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:38:39 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:41:55 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:41:59 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:42:10 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:44:40 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:47:07 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:49:18 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:49:23 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:51:37 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:53:44 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+10:56:22 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+11:35:34 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+12:08:25 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/scenarios/NewTestScenario.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+16:41:14 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+17:29:03 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+17:43:49 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+18:14:29 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:17:05 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:18:58 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:21:23 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:23:14 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:24:15 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:23:47 **** Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+01:24:06 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:11:05 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:21:46 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:26:56 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+13:31:57 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+17:21:25 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+17:24:21 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+17:26:03 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+14:03:45 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+15:08:13 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+15:11:26 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+veins/modules/application/platooning/apps/BaseApp.cc
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+15:34:39 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+Creating shared library: ../out/gcc-debug/src/libveins.so
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'
+15:39:00 **** Incremental Build of configuration gcc-debug for project plexe-veins ****
+make MODE=debug all 
+make[1]: Entering directory '/home/kevin/src/plexe-veins/src'
+make[1]: Leaving directory '/home/kevin/src/plexe-veins/src'

@@ -1,0 +1,105 @@
+
+#include "veins/modules/application/platooning/scenarios/NewTestScenario.h"
+
+using namespace Veins;
+
+Define_Module(NewTestScenario);
+
+void NewTestScenario::initialize(int stage)
+{
+
+    BaseScenario::initialize(stage);
+
+    if (stage == 0)
+        // get pointer to application
+        appl = FindModule<BaseApp*>::findSubModule(getParentModule());
+
+    if (stage == 1) {
+        // average speed
+        leaderSpeed = par("leaderSpeed").doubleValue() / 3.6;
+	// speed to which the lead vehicle will accelerate
+        topSpeed = par("topSpeed").doubleValue() / 3.6;
+        // start accelerating time
+        startAccelerating = SimTime(par("startAccelerating").doubleValue());
+        // start braking time
+        startBraking = SimTime(par("startBraking").doubleValue());
+	// stop braking time
+        stopBraking = SimTime(par("stopBraking").doubleValue());
+	// get braking deceleration
+        brakingDeceleration = par("brakingDeceleration").doubleValue();
+
+        if (positionHelper->getId() < positionHelper->getLanesCount()) {
+
+            startAccelerationMsg = new cMessage("startAccelerationMsg");
+            startBrakingMsg = new cMessage("startBrakingMsg");
+            stopBrakingMsg = new cMessage("stopBrakingMsg");
+            checkSpeedMsg = new cMessage("checkSpeedMsg");
+
+            /*if (simTime() > startAccelerating) {
+                startAccelerating = simTime();
+                scheduleAt(simTime(), startAccelerationMsg);
+                scheduleAt(stopAccelerating, stopAccelerationMsg);
+                scheduleAt(startBraking, startBrakingMsg);
+                scheduleAt(stopBraking, stopBrakingMsg);
+            }
+            else {
+                //scheduleAt(startAccelerating, startAccelerationMsg);
+                //(stopAccelerating, stopAccelerationMsg);
+                //scheduleAt(startBraking, startBrakingMsg);
+                //scheduleAt(stopBraking, stopBrakingMsg);
+
+                scheduleAt(startAccelerating, speedUp);
+            }*/
+            // set base cruising speed
+            traciVehicle->setCruiseControlDesiredSpeed(leaderSpeed);
+            scheduleAt(startAccelerating, startAccelerationMsg);
+            scheduleAt(startBraking, startBrakingMsg);
+            //scheduleAt(stopBraking, stopBrakingMsg);
+        }
+        //else {
+            // let the follower set a higher desired speed to stay connected
+            // to the leader when it is accelerating
+            //traciVehicle->setCruiseControlDesiredSpeed(leaderSpeed + 1);
+        //}
+    }
+}
+
+NewTestScenario::~NewTestScenario()
+{
+    cancelAndDelete(startAccelerationMsg);
+    startAccelerationMsg = nullptr;
+    cancelAndDelete(startBrakingMsg);
+    startBrakingMsg = nullptr;
+    cancelAndDelete(stopBrakingMsg);
+    stopBrakingMsg = nullptr;
+    cancelAndDelete(checkSpeedMsg);
+        checkSpeedMsg = nullptr;
+}
+
+void NewTestScenario::handleSelfMsg(cMessage* msg)
+{
+    BaseScenario::handleSelfMsg(msg);
+        if (msg == startAccelerationMsg) {
+            //Plexe::VEHICLE_DATA data;
+            //traciVehicle->getVehicleData(&data);
+            //traciVehicle->setLeaderVehicleData(-1.5, data.acceleration, data.speed, data.positionX, data.positionY, data.time);
+            traciVehicle->setCruiseControlDesiredSpeed(topSpeed);
+            //traciVehicle->setLeaderVehicleData();
+        }
+
+	    if (msg == startBrakingMsg) {
+	        //traciVehicle->setFixedAcceleration(1, -brakingDeceleration);
+	        //scheduleAt(simTime()+0.001, checkSpeedMsg);
+	        traciVehicle->setCruiseControlDesiredSpeed(leaderSpeed);
+	    }
+	    if (msg == checkSpeedMsg) {
+	        Plexe::VEHICLE_DATA data;
+	        traciVehicle->getVehicleData(&data);
+	        if (data.speed <= 25.72) {
+	            traciVehicle->setFixedAcceleration(1,0);
+	        } else {
+	            scheduleAt(simTime()+0.001, checkSpeedMsg);
+	        }
+
+	    }
+}

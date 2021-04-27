@@ -1,0 +1,6 @@
+MAX_RECENT_WORKSPACES=10
+RECENT_WORKSPACES=/home/kevin/src/omnetpp-5.1.1/plexe-test\n/home/kevin/src1/omnetpp-5.1.1/plexe-test\n/home/kevin/src/omnetpp-5.1.1/samples
+RECENT_WORKSPACES_PROTOCOL=3
+SHOW_RECENT_WORKSPACES=false
+SHOW_WORKSPACE_SELECTION_DIALOG=true
+eclipse.preferences.version=1
